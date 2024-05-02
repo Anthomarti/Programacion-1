@@ -7,7 +7,7 @@ video = VideoFileClip(video_path)
 # Trim the complete duration of the video
 # gif_clip = video.subclip(0, video.duration) <- este es el uso correcto, pero nuestro video no tiene "duracion" 
 
-gif_clip = video.subclip(0, 25)
+gif_clip = video.subclip(0, 28)
 
 # Define the path to save the full duration GIF
 gif_path = 'ConvertidoraGIF//videoGitIgnore.gif'
