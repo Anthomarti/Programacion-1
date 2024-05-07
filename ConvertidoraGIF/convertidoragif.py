@@ -1,7 +1,7 @@
 from moviepy.editor import VideoFileClip
 
 # Load the video file
-video_path = 'ConvertidoraGIF//videoGitIgnore.mp4'
+video_path = 'ConvertidoraGIF\main.py - Desactivando la IA - Replit.mp4'
 video = VideoFileClip(video_path)
 
 # Trim the complete duration of the video
@@ -10,7 +10,7 @@ video = VideoFileClip(video_path)
 gif_clip = video.subclip(0, 28)
 
 # Define the path to save the full duration GIF
-gif_path = 'ConvertidoraGIF//videoGitIgnore.gif'
+gif_path = 'ConvertidoraGIF\main.py - Desactivando la IA - Replit.gif'
 
 # Save the trimmed clip as a GIF for the full duration
 gif_clip.write_gif(gif_path, fps=10)
