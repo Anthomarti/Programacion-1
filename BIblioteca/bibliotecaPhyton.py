@@ -1,5 +1,6 @@
 import csv
 
+################################################################
 
 #Definimos la funcion que calcula el promedio
 def calcularPromedio(file):
@@ -19,18 +20,25 @@ def calcularPromedio(file):
 	print(f"El promedio es: {promedio:.2f}")
 	return promedio
 
+################################################################
+
 #Definimos la funcion que escribe el promedio en un nuevo archivo
 def escribirPromedio(file, promedio):
 	# Escribimos el promedio de calificaciones en un nuevo archivo
 	with open(file, 'w') as archivo_promedio:
 			archivo_promedio.write(f"El promedio de las calificaciones es: {promedio}\n")
-		
+
+################################################################
+
 # Definimos la funcion para agregar un estudiante y su promedio
 def agregarEstudiante (file, estudiante, calificacion):
 	with open(file, 'a+') as archivo_estudiante:
 			archivo_estudiante.write(f"\n{estudiante}, {calificacion}")
 
 	# Definir la funcion que crea el archivo CSV, con las cabeceras "Nombre, Calificacion"
+
+################################################################
+
 def crearArchivo(file, campos):
 	try:
 		with open(file, 'x') as archivo_csv:
@@ -38,10 +46,12 @@ def crearArchivo(file, campos):
 	except FileExistsError:
 		pass
 
+################################################################
+
 if __name__ == '__main__':
 	# Se crean las variables con el nombre de los ficheros
-	file = 'calificaciones.csv'
-	file_promedio = 'promedio_calificaciones.txt'
+	file = 'libros.csv'
+	file_promedio = 'prueba.txt'
 
 	# Creo el archivo csv con los Campos "Nombre, Calificacion"
 	campos = "Nombre, Calificacion"
