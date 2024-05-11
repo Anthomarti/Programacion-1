@@ -1,4 +1,24 @@
 import csv
+from tkinter import *
+
+ventana = Tk()
+ventana.title("LIBROS")
+ventana.geometry("400x400")
+
+libros = []
+libro = ""
+textoInput = StringVar()
+
+labelTexto = Label(ventana, text="¡Ingrese un libro!")
+labelTexto.grid(row=0, column=0, pady=15)
+
+labelTexto = Label(ventana, text="Nombre:")
+labelTexto.grid(row=2, column=0, pady=15)
+
+cuadroDeTexto = Entry(ventana, textvariable=textoInput, width= 20)
+cuadroDeTexto.grid(row=2, column=0)
+
+ventana.mainloop()
 
 ################################################################
 
