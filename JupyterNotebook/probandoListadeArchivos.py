@@ -17,17 +17,17 @@ def escribirArchivo(directorios, rutaOut):
         # Abre el archivo markdown para escribirlo
         with open(rutaOut, mode='w') as mddirectorio:
             # Escribe el header
-            mddirectorio.write('# Archivos Notebook\n')
+            mddirectorio.write('## Archivos Notebook:\n')
             
             # Escribe los nombres de los archivos
             for directorio in directorios:
-                mddirectorio.write(f'- {directorio}\n')
+                mddirectorio.write('## [' + directorio + '](' + directorio + ')\n')
                 
     except Exception as e:
         return str(e)
 
 ruta_directorio = 'JupyterNotebook/'  # Reemplazarlo con la ruta donde estan los archivos ".ipynb"
-rutaOut = 'JupyterNotebook\0_0_Resumen.md'  # Reemplazarlo con la ruta donde desea guardar el archivo markdown
+rutaOut = 'JupyterNotebook/0_0_Resumen.md'  # Reemplazarlo con la ruta donde desea guardar el archivo markdown
 
 directorios = listar_archivos(ruta_directorio)
 
