@@ -9,23 +9,30 @@
 # escenario podría ser una tarea titánica.
 """
 
+# Inicializar listas vacías para personajes y armas
 personajes = []
 armas = []
 
+# Función para crear un arma
 def crear_arma(nombre, daño):
+    # Crear un diccionario para el arma con nombre y daño
     arma = {
         "nombre": nombre,
         "daño": daño
     }
+    # Agregar el arma a la lista de armas
     armas.append(arma)
 
+# Función para crear un personaje
 def crear_personaje(nombre, vida, ataque, habilidad, arma):
-    # Verificar que el arma exista
+    # Verificar que el arma exista en la lista de armas
     arma_elegida = next((a for a in armas if a["nombre"] == arma), None)
     if arma_elegida is None:
+        # Si el arma no existe, mostrar un mensaje de error
         print("Error: El arma no existe.")
         return
 
+    # Crear un diccionario para el personaje con nombre, vida, ataque, habilidad y arma
     personaje = {
         "nombre": nombre,
         "vida": vida,
@@ -33,16 +40,21 @@ def crear_personaje(nombre, vida, ataque, habilidad, arma):
         "habilidad": habilidad,
         "arma": arma_elegida
     }
+    # Agregar el personaje a la lista de personajes
     personajes.append(personaje)
 
+# Función para mostrar la lista de personajes
 def mostrar_personajes():
     print("\nPersonajes:")
     for personaje in personajes:
+        # Mostrar la información del personaje, incluyendo el nombre del arma y su daño
         print(f"{personaje['nombre']} - Vida: {personaje['vida']} - Ataque: {personaje['ataque']} - Habilidad: {personaje['habilidad']} - Arma: {personaje['arma']['nombre']} (Daño: {personaje['arma']['daño']})")
 
+# Función para mostrar la lista de armas
 def mostrar_armas():
     print("\nArmas:")
     for arma in armas:
+        # Mostrar la información del arma, incluyendo su nombre y daño
         print(f"{arma['nombre']} - Daño: {arma['daño']}")
 
 # Crear armas
