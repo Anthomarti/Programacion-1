@@ -7516,17 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="%C3%8Dndice">Índice<a class="anchor-link" href="#%C3%8Dndice">¶</a></h2><ol>
-<li><a href="#id1">Identificadores, constantes y variables</a></li>
-<li><a href="#id2">Tipos de datos simples. Enteros, reales, booleanos y caracteres</a></li>
-<li><a href="#id3">Operadores logicos y de comparacion</a></li>
-<li><a href="#id4">Comparaciones encadenadas</a></li>
-<li><a href="#des1">Desafio 1: Clasificar números</a></li>
-<li><a href="#des2">Desafio 2: Calcular promedio</a></li>
-<li><a href="#des3">Desafio 3: Convertidor de temperaturas</a></li>
-<li><a href="#des4">Desafio 4: Verificar múltiplos de varios números</a></li>
-<li><a href="#ejemplos">Ejemplos</a></li>
-</ol>
+<h1 id="6.-Estructuras-de-control">6. Estructuras de control<a class="anchor-link" href="#6.-Estructuras-de-control">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7537,10 +7527,30 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="id1"> </a></p>
-<h1 id="Identificadores,-constantes-y-variables">Identificadores, constantes y variables<a class="anchor-link" href="#Identificadores,-constantes-y-variables">¶</a></h1><p>En Python, un identificador es un nombre que se utiliza para identificar una variable, función, clase, módulo u otro objeto. Los identificadores son sensibles a mayúsculas y minúsculas y deben seguir ciertas reglas de nomenclatura. Para nombrar los identificadores en Python, se utilizan letras, números y guiones bajos. Sin embargo, el primer carácter no puede ser un número y no se permiten espacios ni caracteres especiales.</p>
-<p>Para garantizar la creación correcta de identificadores en Python, es importante seguir las PEP 8, que son las guías de estilo de Python. Estas proporcionan recomendaciones sobre cómo nombrar variables, funciones y otros objetos de manera consistente y legible para otros programadores. Puedes encontrar las <a href="https://peps.python.org/pep-0008/">PEP 8 en el sitio web oficial de Python</a>. Siguiendo estas pautas, puedes mejorar la claridad y la legibilidad de tu código, lo que facilita su mantenimiento y colaboración con otros desarrolladores.</p>
-<p>Por ejemplo, los siguientes son identificadores válidos en Python:</p>
+<p>En cualquier programa, es esencial poder controlar el flujo de la ejecución. Aquí es donde entran en juego las estructuras de control, que nos permiten tomar decisiones y repetir acciones en nuestros programas. Antes de adentrarnos en los detalles de estas estructuras, recordemos algunos conceptos fundamentales de tipos de datos y operadores que hemos visto previamente. Los tipos de datos, como enteros, cadenas y booleanos, junto con los operadores de comparación y lógicos, son fundamentales para evaluar las condiciones que rigen nuestras decisiones. Además, la entrada y salida de datos nos permiten interactuar con el usuario, obteniendo información necesaria y mostrando resultados relevantes. Estas habilidades serán cruciales al trabajar con declaraciones condicionales, como if, elif y else, que nos permiten desarrollar programas dinámicos que responden a diferentes situaciones. Vamos a explorar estas estructuras de control en más detalle.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="a.-Cruce-de-Decisiones:-Condicionales">a. Cruce de Decisiones: Condicionales<a class="anchor-link" href="#a.-Cruce-de-Decisiones:-Condicionales">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Las estructuras de control son como los signos de tráfico en el camino de la ejecución de nuestro programa. Nos permiten tomar decisiones basadas en diferentes condiciones y repetir ciertas acciones hasta que se cumpla una condición. En Python, los condicionales se manejan con las palabras clave if, elif y else.</p>
+<p>Vamos a imaginar que estamos desarrollando un programa para determinar si un estudiante ha aprobado o reprobado un examen basado en su calificación.</p>
 </div>
 </div>
 </div>
@@ -7552,265 +7562,12 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero</span>
-<span class="n">total_venta</span>
-<span class="n">ListaDeCompras</span>
-<span class="n">edad</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Mientras que los siguientes no son identificadores válidos:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="n">d_array</span>  <span class="c1"># el primer carácter no puede ser un número</span>
-<span class="n">mi</span> <span class="n">identificador</span>  <span class="c1"># no se permiten espacios</span>
-<span class="n">total</span><span class="err">$</span>  <span class="c1"># no se permiten caracteres especiales</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Nota 2: Cabe destacar, que por mas que no es inválido, utilizar los caracteres "l" (ele minúscula), "i" (letra i latina mayuscula), "O" (letra o mayúscula) y "0" (número cero), puede causar confusión según el caso en donde se utilicen.</em></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>También se tiene en cuenta que, como la mayoría de lenguajes, Python tiene una lista de palabras reservadas, que no pueden utilizarse como identificadores:</p>
-<table>
-<thead>
-<tr>
-<th>Palabra reservadas</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>False</td>
-</tr>
-<tr>
-<td>True</td>
-</tr>
-<tr>
-<td>def</td>
-</tr>
-<tr>
-<td>while</td>
-</tr>
-<tr>
-<td>if</td>
-</tr>
-<tr>
-<td>else</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Para ver la lista completa utiliza el siguiente codigo en Python:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keyword</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">calificacion</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Por favor ingrese la calificación del estudiante: "</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Las constantes son valores que no cambian durante la ejecución de un programa. En Python, se utilizan variables para almacenar constantes. Las constantes pueden ser números, cadenas de texto, booleanos o cualquier otro valor inmutable.</p>
-<p>Por ejemplo, los siguientes son constantes en Python:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">PI</span> <span class="o">=</span> <span class="mf">3.14159</span>
-<span class="n">NOMBRE_EMPRESA</span> <span class="o">=</span> <span class="s2">"Acme Corporation"</span>
-<span class="n">ES_POSITIVO</span> <span class="o">=</span> <span class="kc">True</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Las variables en Python son objetos que se utilizan para almacenar datos. Las variables se crean cuando se les asigna un valor y pueden cambiar durante la ejecución de un programa.</p>
-<p>Por ejemplo, el siguiente código crea una variable llamada edad y le asigna el valor 25:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">edad</span> <span class="o">=</span> <span class="mi">25</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>En Python, las variables no necesitan ser declaradas antes de usarlas. Python automáticamente asigna un tipo de datos a las variables basándose en el valor que se les asigna. Por ejemplo, si se asigna un número entero a una variable, Python automáticamente la considerará como una variable de tipo int. Si se asigna una cadena de texto a una variable, Python la considerará como una variable de tipo str.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Pero... ¿cómo podemos determinar el tipo de una variable? Si veo "un número" entero, puedo identificar que el tipo de variable es un int o si veo un texto escrito entre (" "), puedo determinar que es una variable str.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">edad</span> <span class="o">=</span> <span class="mi">12</span>
-<span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Anthony"</span>
-<span class="n">altura</span> <span class="o">=</span> <span class="mf">1.75</span>
-
-<span class="nb">print</span> <span class="p">(</span><span class="s2">"la variable"</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="s2">"es de tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">edad</span><span class="p">))</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">"la variable"</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="s2">"es de tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">nombre</span><span class="p">))</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">"la variable"</span><span class="p">,</span> <span class="n">altura</span><span class="p">,</span> <span class="s2">"es de tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">altura</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Es importante tener en cuenta que las variables en Python son sensibles a mayúsculas y minúsculas. Esto significa que las variables edad y Edad son dos variables diferentes en Python.</p>
-<p>Además, las variables en Python pueden ser eliminadas utilizando la palabra clave del (Siempre y cuando esten definidas). Por ejemplo, el siguiente código elimina la variable edad y nombre:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">edad</span><span class="p">,</span> <span class="n">nombre</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">altura</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Cuidado! Que si intento eliminar la variable edad, sin crearla de nuevo, dará error, ya que la misma no existe. Este codigo resuelve este problema:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="s2">"edad"</span> <span class="ow">in</span> <span class="nb">globals</span><span class="p">():</span>
-    <span class="k">del</span> <span class="n">edad</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"puedo borrar edad"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">calificacion</span> <span class="o">&gt;=</span> <span class="mi">6</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"El estudiante ha aprobado el examen."</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"no puedo borrar"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"El estudiante ha reprobado el examen."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7823,7 +7580,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Nota 3: globals es un diccionario que cuenta con todas las variables globales que se utilizan en el programa actual.</em></p>
+<p>En este ejemplo, el programa pide al usuario que ingrese la calificación del estudiante. Luego, usa una declaración if para comprobar si la calificación es igual o superior a 6. Si es así, el programa imprime un mensaje diciendo que el estudiante ha aprobado. Si no es así, el programa imprime un mensaje diciendo que el estudiante ha reprobado.</p>
 </div>
 </div>
 </div>
@@ -7834,23 +7591,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="id2"> </a></p>
-<h1 id="Tipos-de-datos-simples.-Enteros,-reales,-booleanos-y-caracteres.">Tipos de datos simples. Enteros, reales, booleanos y caracteres.<a class="anchor-link" href="#Tipos-de-datos-simples.-Enteros,-reales,-booleanos-y-caracteres.">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>En programación, los datos son la información que se manipula. Los lenguajes de programación trabajan con diferentes tipos de datos para poder manipular la información. En este artículo nos enfocaremos en los tipos de datos simples en Python, que son los más básicos y fundamentales para cualquier programa.</p>
-<p>Python es un lenguaje de programación orientado a objetos, lo que significa que cada valor en Python es un objeto. Un objeto es una estructura de datos que puede tener atributos (variables) y métodos (funciones). Los objetos en Python tienen un tipo que determina qué operaciones se pueden realizar con ellos.</p>
-<h2 id="Tipos-de-datos-simples">Tipos de datos simples<a class="anchor-link" href="#Tipos-de-datos-simples">¶</a></h2><p>Los tipos de datos simples en Python se dividen en cuatro categorías: enteros, reales, booleanos y caracteres. En Python también existe un tipo de dato complejo, que nos permite trabajar con números complejos.</p>
-<h3 id="Enteros-(int)">Enteros (int)<a class="anchor-link" href="#Enteros-(int)">¶</a></h3><p>Los enteros son números sin parte decimal. En Python, los enteros se representan con el tipo de datos int. Los enteros se pueden representar en notación decimal, binaria, octal y hexadecimal.</p>
-<p>Por ejemplo, para definir una variable entera y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
+<p>A menudo, cuando programamos, nos encontramos con situaciones donde no basta con preguntar "¿es esto cierto o falso?". La realidad suele ser más compleja y necesitamos considerar múltiples condiciones. Por ejemplo, ¿qué pasa si queremos saber si un número es positivo, negativo o cero? No podemos limitarnos a una sola pregunta. Aquí es donde el uso de elif se vuelve esencial, permitiéndonos manejar varios escenarios posibles con claridad y precisión.</p>
 </div>
 </div>
 </div>
@@ -7862,38 +7603,14 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero_entero</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Número entero:"</span><span class="p">,</span> <span class="n">numero_entero</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">numero_entero</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">res</span> <span class="o">=</span> <span class="mi">0</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese un número: "</span><span class="p">))</span>
 
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">-</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">*</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">/</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">c</span><span class="o">/</span><span class="n">a</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">**</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">numero</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">numero</span><span class="si">}</span><span class="s2"> es un número positivo."</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">numero</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">numero</span><span class="si">}</span><span class="s2"> es cero."</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">numero</span><span class="si">}</span><span class="s2"> es un número negativo."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7906,8 +7623,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Reales-(float)">Reales (float)<a class="anchor-link" href="#Reales-(float)">¶</a></h3><p>Los números reales son aquellos que tienen una parte decimal. En Python, los números reales se representan con el tipo de datos float.</p>
-<p>Por ejemplo, para definir una variable real y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
+<p>A veces, nos encontramos en situaciones donde queremos asignar un valor a una variable dependiendo de una condición específica. Por ejemplo, queremos saber si un número es par o impar y asignar un valor basado en esa condición. En Python, podemos hacer esto de manera concisa utilizando expresiones condicionales en una sola línea. Esta técnica nos permite escribir código más limpio y directo. Aquí está la solución:</p>
 </div>
 </div>
 </div>
@@ -7919,8 +7635,9 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero_real</span> <span class="o">=</span> <span class="mf">3.1416</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Número real:"</span><span class="p">,</span> <span class="n">numero_real</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">numero_real</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese un número: "</span><span class="p">))</span>
+<span class="n">tipo_numero</span> <span class="o">=</span> <span class="s2">"par"</span> <span class="k">if</span> <span class="n">numero</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="k">else</span> <span class="s2">"impar"</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"El número </span><span class="si">{</span><span class="n">numero</span><span class="si">}</span><span class="s2"> es </span><span class="si">{</span><span class="n">tipo_numero</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7933,8 +7650,19 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Booleanos-(bool)">Booleanos (bool)<a class="anchor-link" href="#Booleanos-(bool)">¶</a></h3><p>Los booleanos son tipos de datos que solo pueden tomar dos valores: True (verdadero) o False (falso). En Python, los booleanos se representan con el tipo de datos bool.</p>
-<p>Por ejemplo, para definir una variable booleana y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
+<h2 id="b.-Ciclos-Terminables:-Bucles-'for'">b. Ciclos Terminables: Bucles 'for'<a class="anchor-link" href="#b.-Ciclos-Terminables:-Bucles-'for'">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>En ocasiones, necesitaremos repetir una acción varias veces. Aquí es donde los bucles entran en juego. Python ofrece dos tipos de bucles: for y while.</p>
+<p>Para ilustrar cómo funcionan, vamos a usar un ejemplo simple. Supongamos que queremos imprimir los números del 1 al 5.</p>
 </div>
 </div>
 </div>
@@ -7946,8 +7674,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">verdadero</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Booleano:"</span><span class="p">,</span> <span class="n">verdadero</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">verdadero</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">numero</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7960,7 +7688,41 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Los valores booleanos tambien pueden ser utilizados</p>
+<p>En este caso, el bucle for recorre los números del 1 al 5 (el límite superior en range() es exclusivo), imprimiendo cada número en la consola.</p>
+<p>Las estructuras de control, los condicionales y los bucles son fundamentales en la programación. Nos permiten crear programas más dinámicos y flexibles, capaces de tomar decisiones y repetir tareas basadas en las condiciones que definamos.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="c.-Please,-stop-the-'while'">c. Please, stop the 'while'<a class="anchor-link" href="#c.-Please,-stop-the-'while'">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Primero vamos a ver que es "while", es un bucle que repite un bloque de codigo mientras sea verdadera, en nuestras palabras imaginemos que tenemos 10 ml de agua este estara con agua que es nuestra verdad hasta que lo terminamos ahi paso a ser falso entonces se terminaria el bucle</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Vamos a aplicar nuestro conocimiento recién adquirido sobre bucles para resolver un problema real: calcular el promedio de las calificaciones de un estudiante. Supongamos que un estudiante nos proporciona sus calificaciones una por una. El estudiante indicará que ha terminado de proporcionar las calificaciones ingresando el número 0.</p>
 </div>
 </div>
 </div>
@@ -7972,11 +7734,18 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">B</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">C</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">D</span> <span class="o">=</span> <span class="n">A</span> <span class="ow">and</span> <span class="n">B</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">suma_calificaciones</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">contador_asignaturas</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">calificacion</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese una calificación (entre 1 y 12) o 0 para terminar: "</span><span class="p">))</span>
+
+<span class="k">while</span> <span class="n">calificacion</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">suma_calificaciones</span> <span class="o">+=</span> <span class="n">calificacion</span>
+    <span class="n">contador_asignaturas</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="n">calificacion</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese una calificación (entre 1 y 12) o 0 para terminar: "</span><span class="p">))</span>
+
+<span class="n">promedio</span> <span class="o">=</span> <span class="n">suma_calificaciones</span> <span class="o">/</span> <span class="n">contador_asignaturas</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"El promedio de las calificaciones es: </span><span class="si">{</span><span class="n">promedio</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7989,8 +7758,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Nota 5: Como operadores logicos solo existen 3, el and, or, y el not.
-Faltando: el condicional, bicondicional</em></p>
+<p>En este código, el bucle while se ejecuta hasta que el estudiante ingrese 0. Si bien es sencillo y cumple con su objetivo, este código no verifica si las calificaciones ingresadas están dentro del rango válido (1 a 12).</p>
 </div>
 </div>
 </div>
@@ -8001,8 +7769,29 @@ Faltando: el condicional, bicondicional</em></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Caracteres-(str)">Caracteres (str)<a class="anchor-link" href="#Caracteres-(str)">¶</a></h3><p>Los caracteres son un tipo de dato que representa un solo carácter. En Python, los caracteres se representan con el tipo de datos str.</p>
-<p>Por ejemplo, para definir una variable de tipo carácter y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
+<h2 id="d.-Controlando-el-Flujo-con-'break'-y-'continue'">d. Controlando el Flujo con 'break' y 'continue'<a class="anchor-link" href="#d.-Controlando-el-Flujo-con-'break'-y-'continue'">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Ahora, vamos a mejorar nuestro código anterior incorporando las declaraciones break y continue para un mejor control del flujo del programa y la validación de las calificaciones.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>En este código, la declaración break se utiliza para detener el bucle cuando el estudiante ingresa 0. Por otro lado, la declaración continue se usa para saltar a la próxima iteración del bucle si la calificación ingresada no está dentro del rango válido, evitando así que calificaciones incorrectas se sumen a suma_calificaciones y se cuenten en contador_asignaturas.</p>
 </div>
 </div>
 </div>
@@ -8014,8 +7803,24 @@ Faltando: el condicional, bicondicional</em></p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">caracter</span> <span class="o">=</span> <span class="s1">'a'</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Carácter:"</span><span class="p">,</span> <span class="n">caracter</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">caracter</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">suma_calificaciones</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">contador_asignaturas</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">calificacion</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese una calificación (entre 1 y 12) o 0 para terminar: "</span><span class="p">))</span>
+    
+    <span class="k">if</span> <span class="n">calificacion</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">break</span>
+    
+    <span class="k">if</span> <span class="n">calificacion</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">calificacion</span> <span class="o">&gt;</span> <span class="mi">12</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"La calificación debe estar entre 1 y 12. Inténtalo de nuevo."</span><span class="p">)</span>
+        <span class="k">continue</span>
+
+    <span class="n">suma_calificaciones</span> <span class="o">+=</span> <span class="n">calificacion</span>
+    <span class="n">contador_asignaturas</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">promedio</span> <span class="o">=</span> <span class="n">suma_calificaciones</span> <span class="o">/</span> <span class="n">contador_asignaturas</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"El promedio de las calificaciones es: </span><span class="si">{</span><span class="n">promedio</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8028,23 +7833,7 @@ Faltando: el condicional, bicondicional</em></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Complejos-(complex)">Complejos (complex)<a class="anchor-link" href="#Complejos-(complex)">¶</a></h3><p>Los números complejos son aquellos que tienen una parte real y una parte imaginaria. En Python, los números complejos se representan con el tipo de datos complex.</p>
-<p>Por ejemplo, para definir una variable compleja y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero_complejo</span> <span class="o">=</span> <span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="n">j</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Número complejo:"</span><span class="p">,</span> <span class="n">numero_complejo</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">numero_complejo</span><span class="p">))</span>
-</pre></div>
-</div>
+<h1 id="Desaf%C3%ADos">Desafíos<a class="anchor-link" href="#Desaf%C3%ADos">¶</a></h1>
 </div>
 </div>
 </div>
@@ -8055,8 +7844,7 @@ Faltando: el condicional, bicondicional</em></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="id3"> </a></p>
-<h1 id="Operadores-logicos-y-de-comparacion">Operadores logicos y de comparacion<a class="anchor-link" href="#Operadores-logicos-y-de-comparacion">¶</a></h1>
+<h2 id="Desaf%C3%ADo-1:-Calificaciones-Aprobatorias-y-Desaprobatorias">Desafío 1: Calificaciones Aprobatorias y Desaprobatorias<a class="anchor-link" href="#Desaf%C3%ADo-1:-Calificaciones-Aprobatorias-y-Desaprobatorias">¶</a></h2><p>Supón que estás analizando las calificaciones de los estudiantes y quieres saber cuántos aprobaron y cuántos desaprobaron. Se considera que una calificación de 7 o superior es aprobatoria y cualquier calificación menor a 7 es desaprobatoria. Utiliza lo que aprendiste sobre bucles y condicionales para resolver este problema.</p>
 </div>
 </div>
 </div>
@@ -8067,17 +7855,50 @@ Faltando: el condicional, bicondicional</em></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Los operadores lógicos y de comparación son fundamentales en la programación, ya que permiten evaluar condiciones y realizar acciones basadas en el resultado de esas condiciones. En Python, tenemos operadores de comparación para comparar valores y operadores lógicos para combinar condiciones.</p>
-<h2 id="Operadores-de-comparacion">Operadores de comparacion<a class="anchor-link" href="#Operadores-de-comparacion">¶</a></h2><p>Los operadores de comparación son utilizados para comparar dos valores y devuelven un valor booleano, es decir, True o False. Los operadores de comparación en Python incluyen:</p>
+<h2 id="Desaf%C3%ADo-2:-Mejora-del-C%C3%A1lculo-del-Promedio">Desafío 2: Mejora del Cálculo del Promedio<a class="anchor-link" href="#Desaf%C3%ADo-2:-Mejora-del-C%C3%A1lculo-del-Promedio">¶</a></h2><p>Toma el ejemplo del cálculo del promedio de calificaciones y mejóralo. En lugar de pedir las calificaciones una por una, modifica el código para pedir todas las calificaciones al mismo tiempo (el estudiante puede ingresar las calificaciones separadas por comas) y luego calcular el promedio.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Desaf%C3%ADo-3:-Simulaci%C3%B3n-de-una-Carrera-de-Autos">Desafío 3: Simulación de una Carrera de Autos<a class="anchor-link" href="#Desaf%C3%ADo-3:-Simulaci%C3%B3n-de-una-Carrera-de-Autos">¶</a></h2><p>Vas a simular una carrera de autos. Cada auto tiene una velocidad aleatoria (puedes usar la biblioteca random de Python) y cada ciclo del bucle representa un segundo de la carrera. Al final de cada segundo, cada auto avanza una distancia igual a su velocidad. La carrera dura 10 segundos. Al final de la carrera, debes imprimir el auto ganador. Si hay un empate, debes imprimir todos los autos que empataron.</p>
+<p><em>Nota:</em> Este desafío puede requerir que aprendas sobre conceptos adicionales, por ejemplo cómo generar números aleatorios.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Problemas">Problemas<a class="anchor-link" href="#Problemas">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema:-C%C3%A1lculo-de-Gastos-de-un-Viaje">Problema: Cálculo de Gastos de un Viaje<a class="anchor-link" href="#Problema:-C%C3%A1lculo-de-Gastos-de-un-Viaje">¶</a></h2><p>Supongamos que estás planeando un viaje y quieres calcular el total de gastos estimados. Tienes un arreglo de los diferentes conceptos de gastos (por ejemplo, transporte, alojamiento, alimentación, actividades, etc.) y quieres solicitar al usuario que ingrese el costo estimado para cada concepto. Al final, quieres mostrar el total de gastos estimados para el viaje.</p>
+<p>Planteamiento del problema:</p>
 <ul>
-<li>Igual (==)</li>
-<li>Diferente (!=)</li>
-<li>Mayor que (&gt;)</li>
-<li>Menor que (&lt;)</li>
-<li>Mayor o igual que (&gt;=)</li>
-<li>Menor o igual que (&lt;=)</li>
+<li>Crea un arreglo de conceptos de gastos.</li>
+<li>Utiliza un bucle for para iterar sobre el arreglo y solicitar al usuario que ingrese el costo estimado para cada concepto.</li>
+<li>Utiliza una variable para realizar el seguimiento del total de gastos estimados, inicializada en 0.</li>
+<li>Dentro del bucle, agrega el costo ingresado a la variable del total de gastos estimados.</li>
+<li>Al final del bucle, muestra el total de gastos estimados.</li>
 </ul>
-<p>Ejemplo de uso de operadores de comparación:</p>
+<p>Aquí tienes un ejemplo de cómo podrías resolver este desafío utilizando arreglos:</p>
 </div>
 </div>
 </div>
@@ -8089,15 +7910,17 @@ Faltando: el condicional, bicondicional</em></p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a == b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># Falso, porque 5 no es igual a 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a != b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># Verdadero, porque 5 es diferente de 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a &gt; b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Falso, porque 5 no es mayor que 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a &lt; b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Verdadero, porque 5 es menor que 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a &gt;= b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># Falso, porque 5 no es mayor o igual que 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a &lt;= b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># Verdadero, porque 5 es menor o igual que 7</span>
+<span class="n">conceptos_gastos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="s1">'Transporte'</span><span class="p">,</span> <span class="s1">'Alojamiento'</span><span class="p">,</span> <span class="s1">'Alimentación'</span><span class="p">,</span> <span class="s1">'Actividades'</span><span class="p">,</span> <span class="s1">'Otros'</span><span class="p">])</span>
+
+<span class="n">total_gastos</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">concepto</span> <span class="ow">in</span> <span class="n">conceptos_gastos</span><span class="p">:</span>
+    <span class="n">costo</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Ingrese el costo estimado para </span><span class="si">{</span><span class="n">concepto</span><span class="si">}</span><span class="s2">: "</span><span class="p">))</span>
+    <span class="n">total_gastos</span> <span class="o">+=</span> <span class="n">costo</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"El total de gastos estimados para el viaje es: </span><span class="si">{</span><span class="n">total_gastos</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8110,13 +7933,24 @@ Faltando: el condicional, bicondicional</em></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Operadores-logicos">Operadores logicos<a class="anchor-link" href="#Operadores-logicos">¶</a></h2><p>Los operadores lógicos son utilizados para combinar condiciones. Los operadores lógicos en Python incluyen:</p>
-<ul>
-<li>and: Devuelve True si ambas condiciones son verdaderas, de lo contrario devuelve False.</li>
-<li>or: Devuelve True si al menos una de las condiciones es verdadera, de lo contrario devuelve False.</li>
-<li>not: Devuelve True si la condición es falsa, y False si la condición es verdadera.</li>
-</ul>
-<p>Ejemplo de uso de operadores lógicos:</p>
+<p>En este código, utilizamos un bucle for para iterar sobre el arreglo de conceptos de gastos. En cada iteración, solicitamos al usuario que ingrese el costo estimado para ese concepto y lo sumamos al total de gastos estimados. Al final, mostramos el resultado.</p>
+<p>¡Ahora puedes calcular fácilmente el total de gastos estimados para tu próximo viaje utilizando arreglos! ¡Es asombroso cómo Python nos permite resolver problemas de manera eficiente y sencilla! No te preocupes, en el próximo cuaderno exploraremos más a fondo los conceptos y funcionalidades de los arreglos en Python.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema:-An%C3%A1lisis-de-Calificaciones-utilizando-Pandas-y-Bucles">Problema: Análisis de Calificaciones utilizando Pandas y Bucles<a class="anchor-link" href="#Problema:-An%C3%A1lisis-de-Calificaciones-utilizando-Pandas-y-Bucles">¶</a></h2><p>Supongamos que tienes un archivo CSV llamado "calificaciones.csv" que contiene las calificaciones de varios estudiantes. Tu objetivo es realizar un análisis de las calificaciones utilizando la biblioteca Pandas y bucles for.</p>
+<p><em>Planteamiento del problema:</em>
+Importa la biblioteca Pandas.
+Carga el archivo CSV "calificaciones.csv" en un DataFrame de Pandas.
+Utiliza un bucle for para calcular el promedio de cada estudiante y mostrarlo en la consola.</p>
+<p>Aquí tienes un ejemplo de cómo podrías resolver este desafío utilizando Pandas y bucles for:</p>
 </div>
 </div>
 </div>
@@ -8128,21 +7962,26 @@ Faltando: el condicional, bicondicional</em></p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">z</span> <span class="o">=</span> <span class="mi">15</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="c1"># Comprobar si x es menor que y y si y es menor que z</span>
-<span class="n">condicion1</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">z</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Condición 1 (x &lt; y y y &lt; z):"</span><span class="p">,</span> <span class="n">condicion1</span><span class="p">)</span> <span class="c1"># Verdadero</span>
+<span class="c1"># Carga el archivo CSV en un DataFrame</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"calificaciones.csv"</span><span class="p">)</span>
 
-<span class="c1"># Comprobar si x es igual a y o si y es igual a z</span>
-<span class="n">condicion2</span> <span class="o">=</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">==</span> <span class="n">z</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Condición 2 (x == y o y == z):"</span><span class="p">,</span> <span class="n">condicion2</span><span class="p">)</span> <span class="c1"># Falso</span>
+<span class="c1"># Inicializa variables para calcular el promedio general</span>
+<span class="n">total_calificaciones</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">numero_calificaciones</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="c1"># Negar la condición 1</span>
-<span class="n">condicion3</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">condicion1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Condición 3 (negación de la condición 1):"</span><span class="p">,</span> <span class="n">condicion3</span><span class="p">)</span> <span class="c1"># Falso</span>
+<span class="c1"># Utiliza un bucle for para sumar todas las calificaciones</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">nombre</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">'Nombre'</span><span class="p">]</span>
+    <span class="n">calificacion</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">'Calificacion'</span><span class="p">])</span>
+    <span class="n">total_calificaciones</span> <span class="o">+=</span> <span class="n">calificacion</span>
+    <span class="n">numero_calificaciones</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"La calificación de </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> es: </span><span class="si">{</span><span class="n">calificacion</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Calcula el promedio general</span>
+<span class="n">promedio_general</span> <span class="o">=</span> <span class="n">total_calificaciones</span> <span class="o">/</span> <span class="n">numero_calificaciones</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"El promedio general de las calificaciones es: </span><span class="si">{</span><span class="n">promedio_general</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8155,140 +7994,8 @@ Faltando: el condicional, bicondicional</em></p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>En este ejemplo, hemos utilizado operadores de comparación y operadores lógicos para construir condiciones más complejas y realizar acciones basadas en el resultado de esas condiciones.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="id4"> </a></p>
-<h1 id="Comparaciones-encadenadas">Comparaciones encadenadas<a class="anchor-link" href="#Comparaciones-encadenadas">¶</a></h1><p>Una característica interesante de Python es la posibilidad de realizar comparaciones encadenadas, lo que permite escribir condiciones más compactas y legibles. Veamos un ejemplo de cómo podemos utilizar comparaciones encadenadas y luego plantearemos un desafío para poner en práctica este concepto.</p>
-<p>En Python, se pueden encadenar comparaciones en una sola expresión. Por ejemplo, en lugar de escribir x &lt; y and y &lt; z, puedes escribir x &lt; y &lt; z. Esto es posible gracias a la evaluación de cortocircuito de Python, lo que significa que si la primera comparación devuelve False, el resto de las comparaciones no se evaluarán.</p>
-<p>Ejemplo de comparaciones encadenadas:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">15</span>
-
-<span class="c1"># Comprobar si a es menor que b y si b es menor que c</span>
-<span class="n">condicion_encadenada</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">c</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Comparación encadenada (a &lt; b &lt; c):"</span><span class="p">,</span> <span class="n">condicion_encadenada</span><span class="p">)</span> <span class="c1"># Verdadero</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="des1"> </a></p>
-<h1 id="Desaf%C3%ADo-1:-Clasificar-numeros">Desafío 1: Clasificar numeros<a class="anchor-link" href="#Desaf%C3%ADo-1:-Clasificar-numeros">¶</a></h1><p>Dado tres números distintos, clasificarlos en orden ascendente utilizando comparaciones encadenadas y operadores lógicos.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="des2"> </a></p>
-<h1 id="Desaf%C3%ADo-2:-Calcular-promedio">Desafío 2: Calcular promedio<a class="anchor-link" href="#Desaf%C3%ADo-2:-Calcular-promedio">¶</a></h1><p>Crear un programa que lea 5 calificaciones y calcule su promedio</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="des3"> </a></p>
-<h1 id="Desaf%C3%ADo-3:-Convertidor-de-temperaturas">Desafío 3: Convertidor de temperaturas<a class="anchor-link" href="#Desaf%C3%ADo-3:-Convertidor-de-temperaturas">¶</a></h1><p>Realizar conversiones de una temperatura dada en Celsius a Fahrenheit y Kelvin utilizando operaciones directas sobre las variables. Los cálculos se realizarán directamente al asignar los valores a las variables.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="des4"> </a></p>
-<h1 id="Desaf%C3%ADo-4:-Verificar-m%C3%BAltiplos-de-varios-n%C3%BAmeros">Desafío 4: Verificar múltiplos de varios números<a class="anchor-link" href="#Desaf%C3%ADo-4:-Verificar-m%C3%BAltiplos-de-varios-n%C3%BAmeros">¶</a></h1><p>Objetivo: Determinar si un número dado es múltiplo de 2, 3, 5, 7, 9, 10, y 11 utilizando comparaciones y operadores lógicos.</p>
-<p><em>Descripción:</em>
-Crea un programa que, dado un número, verifique si es múltiplo de los números mencionados. Para cada uno de estos números, el programa debe indicar si el número dado es o no un múltiplo de estos.</p>
-<p><em>Ejemplo de lo que se debe lograr:</em>
-Supongamos que el número dado es 30. El programa deberá determinar:</p>
-<p>¿Es 30 múltiplo de 2? Sí</p>
-<p>¿Es 30 múltiplo de 3? Sí</p>
-<p>¿Es 30 múltiplo de 5? Sí</p>
-<p>¿Es 30 múltiplo de 7? No</p>
-<p>¿Es 30 múltiplo de 9? No</p>
-<p>¿Es 30 múltiplo de 10? Sí</p>
-<p>¿Es 30 múltiplo de 11? No</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="ejemplos"></a></p>
-<h1 id="Ejemplos">Ejemplos<a class="anchor-link" href="#Ejemplos">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Aquí se señala la importancia de que los identificadores sean "sensibles a mayúsculas y minúsculas", siendo qué numero y Numero son dos variables diferentes.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero</span> <span class="o">=</span> <span class="mi">12</span> <span class="c1"># Se crea la variable "numero"</span>
-<span class="n">Numero</span> <span class="o">=</span> <span class="mi">86</span> <span class="c1"># Se crea la variable "Numero", siendo un identificador completamente diferente</span>
-
-<span class="nb">print</span> <span class="p">(</span><span class="s2">"La variable ´numero´, tiene un valor de:"</span><span class="p">,</span> <span class="n">numero</span><span class="p">,</span> <span class="s2">", mientras que la variable ´Numero´ tiene el valor de:"</span><span class="p">,</span> <span class="n">Numero</span><span class="p">,</span> <span class="s2">". Demostrando así que ambas son completamente diferentes para Python."</span><span class="p">)</span>
-</pre></div>
-</div>
+<p>En este código, utilizamos Pandas para cargar el archivo CSV en un DataFrame. Luego, utilizamos un bucle for junto con iterrows() para iterar sobre cada fila del DataFrame. Para cada estudiante, extraemos el nombre y las calificaciones, las convertimos en una lista de enteros y calculamos el promedio.</p>
+<p>Finalmente, mostramos el promedio de cada estudiante en la consola.</p>
 </div>
 </div>
 </div>

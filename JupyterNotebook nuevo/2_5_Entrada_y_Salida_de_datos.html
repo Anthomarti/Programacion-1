@@ -7516,17 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="%C3%8Dndice">Índice<a class="anchor-link" href="#%C3%8Dndice">¶</a></h2><ol>
-<li><a href="#id1">Identificadores, constantes y variables</a></li>
-<li><a href="#id2">Tipos de datos simples. Enteros, reales, booleanos y caracteres</a></li>
-<li><a href="#id3">Operadores logicos y de comparacion</a></li>
-<li><a href="#id4">Comparaciones encadenadas</a></li>
-<li><a href="#des1">Desafio 1: Clasificar números</a></li>
-<li><a href="#des2">Desafio 2: Calcular promedio</a></li>
-<li><a href="#des3">Desafio 3: Convertidor de temperaturas</a></li>
-<li><a href="#des4">Desafio 4: Verificar múltiplos de varios números</a></li>
-<li><a href="#ejemplos">Ejemplos</a></li>
-</ol>
+<h1 id="El-arte-de-la-manipulaci%C3%B3n-de-datos-en-Python">El arte de la manipulación de datos en Python<a class="anchor-link" href="#El-arte-de-la-manipulaci%C3%B3n-de-datos-en-Python">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7537,10 +7527,45 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="id1"> </a></p>
-<h1 id="Identificadores,-constantes-y-variables">Identificadores, constantes y variables<a class="anchor-link" href="#Identificadores,-constantes-y-variables">¶</a></h1><p>En Python, un identificador es un nombre que se utiliza para identificar una variable, función, clase, módulo u otro objeto. Los identificadores son sensibles a mayúsculas y minúsculas y deben seguir ciertas reglas de nomenclatura. Para nombrar los identificadores en Python, se utilizan letras, números y guiones bajos. Sin embargo, el primer carácter no puede ser un número y no se permiten espacios ni caracteres especiales.</p>
-<p>Para garantizar la creación correcta de identificadores en Python, es importante seguir las PEP 8, que son las guías de estilo de Python. Estas proporcionan recomendaciones sobre cómo nombrar variables, funciones y otros objetos de manera consistente y legible para otros programadores. Puedes encontrar las <a href="https://peps.python.org/pep-0008/">PEP 8 en el sitio web oficial de Python</a>. Siguiendo estas pautas, puedes mejorar la claridad y la legibilidad de tu código, lo que facilita su mantenimiento y colaboración con otros desarrolladores.</p>
-<p>Por ejemplo, los siguientes son identificadores válidos en Python:</p>
+<p>En este cuaderno, nos adentraremos en el fascinante mundo de la entrada y salida de datos en Python, descifrando los misterios de cómo este lenguaje versátil maneja el flujo de información. Nuestro viaje nos llevará desde los pasajes más simples y cotidianos, el intercambio constante de datos a través del teclado con funciones aparentemente sencillas como input y print, hasta terrenos más desconocidos y desafiantes.</p>
+<p>A lo largo de nuestra exploración, enfrentaremos dilemas y obstáculos con los que todo programador se cruza eventualmente. ¿Cómo podemos leer y escribir datos de manera efectiva? ¿Cómo formateamos la salida de los datos para que se ajuste a nuestras necesidades y expectativas? ¿Qué pasa cuando los datos que manejamos superan la capacidad de la entrada estándar y la salida estándar y debemos recurrir a archivos externos?</p>
+<p>Estas son algunas de las preguntas que buscaremos responder. Y no sólo buscamos responderlas, sino hacerlo de tal manera que nos equipemos con herramientas que nos permitan enfrentar futuros retos con confianza y competencia.</p>
+<p>Entonces, ¿estás listo para embarcarte en este viaje de descubrimiento y aprendizaje? Adelante, pasemos la primera página y sumerjámonos en el universo de la entrada y salida de datos en Python.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="a.-Lectura-y-escritura-de-datos">a. Lectura y escritura de datos<a class="anchor-link" href="#a.-Lectura-y-escritura-de-datos">¶</a></h2><p>La lectura y escritura de datos es un componente esencial de la programación. Python nos proporciona varias funciones integradas para esto.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="La-puerta-de-entrada:-input()">La puerta de entrada: input()<a class="anchor-link" href="#La-puerta-de-entrada:-input()">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Comenzaremos nuestro viaje en un territorio familiar: la función input(). Como algunos recordarán, esta función es nuestra línea de comunicación con el usuario, permitiéndonos recibir datos directamente de sus manos. Sin embargo, como con cualquier herramienta de comunicación, es importante entender sus reglas y peculiaridades.</p>
+<p>Por ejemplo, puede sorprender a algunos que input(), a pesar de su aparente receptividad, en realidad devuelve siempre los datos ingresados como una cadena de texto. Esto puede tener implicaciones importantes para cómo tratamos los datos más adelante en nuestro código.</p>
+<p>Consideremos el siguiente ejemplo:</p>
 </div>
 </div>
 </div>
@@ -7552,10 +7577,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero</span>
-<span class="n">total_venta</span>
-<span class="n">ListaDeCompras</span>
-<span class="n">edad</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Por favor ingrese su nombre: "</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hola,"</span><span class="p">,</span> <span class="n">nombre</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7568,7 +7591,31 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Mientras que los siguientes no son identificadores válidos:</p>
+<p>En este fragmento, Python solicita al usuario que ingrese su nombre. Después, toma esa entrada y la incorpora en un saludo amigable. Pero, ¿qué pasaría si necesitamos trabajar con números o con otros tipos de datos? Aquí es donde la función input() puede volverse más desafiante. Pero no te preocupes, también exploraremos formas de superar este obstáculo.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Cruzando-la-brecha-de-tipos-con-input()">Cruzando la brecha de tipos con input()<a class="anchor-link" href="#Cruzando-la-brecha-de-tipos-con-input()">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>El desafío que presenta input() radica en su naturaleza de devolver siempre una cadena de texto, incluso cuando ingresamos un número. Esto significa que si queremos hacer operaciones numéricas con la entrada del usuario, necesitaremos encontrar una manera de convertir esa entrada en un número.</p>
+<p>Por suerte, Python ofrece una solución sencilla a este problema: las funciones de conversión de tipos, como int() y float(). Estas funciones toman una cadena de texto como argumento y tratan de convertirla en un número entero o decimal, respectivamente.</p>
+<p>Vamos a probar esto con un ejemplo. Imagina que estás creando un programa para calcular el área de un círculo. El usuario proporcionará el radio, y tu programa calculará el área utilizando la fórmula matemática.</p>
 </div>
 </div>
 </div>
@@ -7580,9 +7627,14 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="mi">2</span><span class="n">d_array</span>  <span class="c1"># el primer carácter no puede ser un número</span>
-<span class="n">mi</span> <span class="n">identificador</span>  <span class="c1"># no se permiten espacios</span>
-<span class="n">total</span><span class="err">$</span>  <span class="c1"># no se permiten caracteres especiales</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="n">radio</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Por favor ingrese el radio del círculo: "</span><span class="p">)</span>
+<span class="n">radio</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">radio</span><span class="p">)</span>  <span class="c1"># Convertimos la cadena de texto a un número decimal</span>
+<span class="n">area</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pow</span><span class="p">(</span><span class="n">radio</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"El área del círculo es:"</span><span class="p">,</span> <span class="n">area</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7595,7 +7647,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Nota 2: Cabe destacar, que por mas que no es inválido, utilizar los caracteres "l" (ele minúscula), "i" (letra i latina mayuscula), "O" (letra o mayúscula) y "0" (número cero), puede causar confusión según el caso en donde se utilicen.</em></p>
+<p>Este código primero solicita al usuario que ingrese el radio del círculo. Luego, convierte esa entrada en un número decimal para poder usarla en cálculos matemáticos. Finalmente, calcula el área del círculo utilizando el radio proporcionado y muestra el resultado.</p>
+<p>Así, con la ayuda de las funciones de conversión de tipos, podemos superar la limitación de input() y trabajar con una variedad más amplia de datos.</p>
 </div>
 </div>
 </div>
@@ -7606,31 +7659,738 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>También se tiene en cuenta que, como la mayoría de lenguajes, Python tiene una lista de palabras reservadas, que no pueden utilizarse como identificadores:</p>
+<h3 id="De-vuelta-al-exterior:-print()">De vuelta al exterior: print()<a class="anchor-link" href="#De-vuelta-al-exterior:-print()">¶</a></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Habiendo ya explorado cómo recibimos datos del usuario con input(), volvamos nuestra atención a cómo comunicamos datos al usuario. En esta etapa de nuestro viaje, nos encontramos con una vieja amiga: la función print().</p>
+<p>La función print() es nuestra ventana hacia el exterior, el portal a través del cual nuestros datos y resultados llegan al usuario. Al igual que con input(), el manejo efectivo de print() puede marcar una diferencia importante en cómo se percibe y utiliza nuestro programa.</p>
+<p>Tomemos un sencillo ejemplo:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Juan"</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Hola,"</span><span class="p">,</span> <span class="n">nombre</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>En este escenario, Python toma la cadena de texto "Juan" almacenada en la variable nombre y la combina con un saludo amigable, que luego se imprime en la consola, resultando en el mensaje "Hola, Juan". Pero, ¿qué sucede si queremos dar formato a la salida de nuestros datos de manera más sofisticada? Ahí es donde print() revela otra de sus habilidades. Continuemos para descubrir más acerca de esta versátil función.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="b.-Formateo-de-salida">b. Formateo de salida<a class="anchor-link" href="#b.-Formateo-de-salida">¶</a></h2>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Mientras continuamos nuestro viaje, nos encontramos con una habilidad esencial que todo programador debería dominar: el formateo de salida. Después de todo, los datos sin un formato adecuado pueden resultar en mensajes confusos o difíciles de leer. Un buen formateo de salida puede mejorar drásticamente la legibilidad y la interpretación de nuestros datos, lo cual es esencial para una comunicación efectiva con el usuario.</p>
+<p>Python nos ofrece varias herramientas poderosas para formatear la salida de los datos. Dos de las más notables son la función format() y las f-strings. Ambas nos permiten incrustar variables dentro de las cadenas de texto, de forma que se puedan crear mensajes dinámicos.</p>
+<p>Explorémoslo con un par de ejemplos.</p>
+<p>Usando la función format():</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Juan"</span>
+<span class="n">edad</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Mi nombre es </span><span class="si">{}</span><span class="s2"> y tengo </span><span class="si">{}</span><span class="s2"> años."</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">nombre</span><span class="p">,</span> <span class="n">edad</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>En este ejemplo, las llaves {} actúan como marcadores de posición para las variables que se pasan a la función format(). Python las reemplaza con las variables nombre y edad en el orden en que se proporcionan.</p>
+<p>Ahora, veamos las f-strings:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Juan"</span>
+<span class="n">edad</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Mi nombre es </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> y tengo </span><span class="si">{</span><span class="n">edad</span><span class="si">}</span><span class="s2"> años."</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Las f-strings funcionan de manera similar a format(), pero permiten insertar las variables directamente dentro de las llaves {}. Esto puede hacer que el código sea más legible cuando se trabaja con muchas variables.</p>
+<p>Ambos ejemplos producirán la misma salida: "Mi nombre es Juan y tengo 30 años". Sin embargo, cada método tiene sus propias ventajas y desventajas, por lo que vale la pena explorar ambos para encontrar el que mejor se adapte a tus necesidades.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Desaf%C3%ADos">Desafíos<a class="anchor-link" href="#Desaf%C3%ADos">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Desaf%C3%ADo-1:-Saludo-Personalizado">Desafío 1: Saludo Personalizado<a class="anchor-link" href="#Desaf%C3%ADo-1:-Saludo-Personalizado">¶</a></h2><p>Escriba un programa que pida al usuario su nombre y su ciudad de origen, luego imprima un saludo personalizado con esa información.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Desaf%C3%ADo-2:-Calculadora-Simple">Desafío 2: Calculadora Simple<a class="anchor-link" href="#Desaf%C3%ADo-2:-Calculadora-Simple">¶</a></h2><p>Escriba un programa que pida al usuario que ingrese dos números y luego imprima la suma, la resta, la multiplicación y la división de esos números.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Desaf%C3%ADo-3:-Formateo-de-Factura">Desafío 3: Formateo de Factura<a class="anchor-link" href="#Desaf%C3%ADo-3:-Formateo-de-Factura">¶</a></h2><p>Escriba un programa que pueda tomar los detalles de los productos (nombre, cantidad, precio) y produzca una factura bien formateada.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Problemas">Problemas<a class="anchor-link" href="#Problemas">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema-1:-Conversor-de-Unidades-de-Temperatura">Problema 1: Conversor de Unidades de Temperatura<a class="anchor-link" href="#Problema-1:-Conversor-de-Unidades-de-Temperatura">¶</a></h2><p>Supongamos que se quiere convertir una temperatura dada en grados Fahrenheit a grados Celsius. Sabemos que los grados Fahrenheit pueden ser convertidos a grados Celsius usando la fórmula:</p>
+<p>(°F - 32) * 5/9 = °C.</p>
+<p>Podemos solicitar al usuario que ingrese una temperatura en grados Fahrenheit y luego convertirla a grados Celsius.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Pedimos al usuario que ingrese la temperatura en grados Fahrenheit</span>
+<span class="n">fahrenheit</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese la temperatura en grados Fahrenheit: "</span><span class="p">))</span>
+
+<span class="c1"># Convertimos la temperatura a grados Celsius</span>
+<span class="n">celsius</span> <span class="o">=</span> <span class="p">(</span><span class="n">fahrenheit</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span>
+
+<span class="c1"># Imprimimos el resultado</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">fahrenheit</span><span class="si">}</span><span class="s2"> grados Fahrenheit son equivalentes a </span><span class="si">{</span><span class="n">celsius</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> grados Celsius."</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema-2:-Calculadora-de-Indice-de-Masa-Corporal-(IMC)">Problema 2: Calculadora de Indice de Masa Corporal (IMC)<a class="anchor-link" href="#Problema-2:-Calculadora-de-Indice-de-Masa-Corporal-(IMC)">¶</a></h2><p>Se desea crear una herramienta que calcule el IMC de una persona. Sabemos que el IMC se calcula dividiendo el peso de la persona (en kilogramos) por el cuadrado de su altura (en metros).</p>
+<p>Podemos solicitar al usuario que ingrese su peso y su altura y luego usar esa información para calcular su IMC.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Pedimos al usuario que ingrese su peso</span>
+<span class="n">peso</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese su peso en kilogramos: "</span><span class="p">)</span>
+<span class="n">peso</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">peso</span><span class="p">)</span>
+
+<span class="c1"># Pedimos al usuario que ingrese su altura</span>
+<span class="n">altura</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese su altura en metros: "</span><span class="p">)</span>
+<span class="n">altura</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">altura</span><span class="p">)</span>
+
+<span class="c1"># Calculamos el IMC</span>
+<span class="n">imc</span> <span class="o">=</span> <span class="n">peso</span> <span class="o">/</span> <span class="n">altura</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1"># Imprimimos el resultado</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Su Indice de Masa Corporal es </span><span class="si">{</span><span class="n">imc</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema-3:-Solicitar-Informaci%C3%B3n-Personal">Problema 3: Solicitar Información Personal<a class="anchor-link" href="#Problema-3:-Solicitar-Informaci%C3%B3n-Personal">¶</a></h2><p>Queremos solicitar a un usuario que ingrese su nombre, su apellido y su año de nacimiento y luego queremos imprimir esa información en un formato específico.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Pedimos al usuario que ingrese su nombre</span>
+<span class="n">nombre</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese su nombre: "</span><span class="p">)</span>
+
+<span class="c1"># Pedimos al usuario que ingrese su apellido</span>
+<span class="n">apellido</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese su apellido: "</span><span class="p">)</span>
+
+<span class="c1"># Pedimos al usuario que ingrese su año de nacimiento</span>
+<span class="n">anio_nacimiento</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese su año de nacimiento: "</span><span class="p">)</span>
+<span class="n">anio_nacimiento</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">anio_nacimiento</span><span class="p">)</span>
+
+<span class="c1"># Pedimos al usuario que ingrese el año actual</span>
+<span class="n">anio_actual</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Ingrese el año actual: "</span><span class="p">)</span>
+<span class="n">anio_actual</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">anio_actual</span><span class="p">)</span>
+
+<span class="c1"># Calculamos la edad aproximada del usuario</span>
+<span class="n">edad</span> <span class="o">=</span> <span class="n">anio_actual</span> <span class="o">-</span> <span class="n">anio_nacimiento</span> 
+
+<span class="c1"># Imprimimos la información en un formato específico</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Nombre: </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="se">\n</span><span class="s2">Apellido: </span><span class="si">{</span><span class="n">apellido</span><span class="si">}</span><span class="se">\n</span><span class="s2">Edad aproximada: </span><span class="si">{</span><span class="n">edad</span><span class="si">}</span><span class="s2"> años."</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema-4:-Lectura-y-Escritura-en-Archivos">Problema 4: Lectura y Escritura en Archivos<a class="anchor-link" href="#Problema-4:-Lectura-y-Escritura-en-Archivos">¶</a></h2><p>Supongamos que somos profesores y necesitamos procesar las calificaciones de nuestros alumnos. Los datos se almacenan en un archivo CSV, y nuestro trabajo es leer ese archivo, calcular el promedio de las calificaciones y luego escribir ese promedio en un nuevo archivo.</p>
+<p>input() y print() no son adecuados aquí porque estamos trabajando con archivos y no con entradas de usuario o impresiones en la consola.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="c1"># Leemos el archivo CSV</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'calificaciones.csv'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo_calificaciones</span><span class="p">:</span>
+    <span class="n">lector</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">archivo_calificaciones</span><span class="p">)</span>
+    <span class="nb">next</span><span class="p">(</span><span class="n">lector</span><span class="p">)</span>  <span class="c1"># Saltamos la cabecera del archivo</span>
+    
+    <span class="n">suma_total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">fila</span> <span class="ow">in</span> <span class="n">lector</span><span class="p">:</span>
+        <span class="n">suma_total</span> <span class="o">+=</span> <span class="nb">float</span><span class="p">(</span><span class="n">fila</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Asumimos que la calificación está en la segunda columna</span>
+        <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1"># Calculamos el promedio</span>
+<span class="n">promedio</span> <span class="o">=</span> <span class="n">suma_total</span> <span class="o">/</span> <span class="n">contador</span> <span class="k">if</span> <span class="n">contador</span> <span class="k">else</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"El promedio es: "</span><span class="p">,</span><span class="n">promedio</span><span class="p">)</span>
+
+<span class="c1"># Escribimos el promedio de calificaciones en un nuevo archivo</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'promedio_calificaciones.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo_promedio</span><span class="p">:</span>
+    <span class="n">archivo_promedio</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">"El promedio de las calificaciones es: </span><span class="si">{</span><span class="n">promedio</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Puedes ver la solución a este problema en el link <a href="https://replit.com/@DomingoPerez/tema25prob4">https://replit.com/@DomingoPerez/tema25prob4</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema-5:-Lectura-y-Escritura-en-Archivos">Problema 5: Lectura y Escritura en Archivos<a class="anchor-link" href="#Problema-5:-Lectura-y-Escritura-en-Archivos">¶</a></h2><p>Supongamos que ahora las calificaciones de los alumnos se almacenan en un archivo JSON en lugar de un CSV. El archivo JSON contiene una lista de diccionarios, donde cada diccionario representa a un estudiante y sus calificaciones. Nuestra tarea será leer este archivo, calcular el promedio de las calificaciones y luego escribir ese promedio en un nuevo archivo JSON.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="c1"># Leemos el archivo JSON</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'calificaciones.json'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo_calificaciones</span><span class="p">:</span>
+    <span class="n">estudiantes</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">archivo_calificaciones</span><span class="p">)</span>
+    
+    <span class="n">suma_total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">contador</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">estudiante</span> <span class="ow">in</span> <span class="n">estudiantes</span><span class="p">:</span>
+        <span class="n">suma_total</span> <span class="o">+=</span> <span class="n">estudiante</span><span class="p">[</span><span class="s1">'calificacion'</span><span class="p">]</span>
+        <span class="n">contador</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="c1"># Calculamos el promedio</span>
+<span class="n">promedio</span> <span class="o">=</span> <span class="n">suma_total</span> <span class="o">/</span> <span class="n">contador</span> <span class="k">if</span> <span class="n">contador</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span>
+
+<span class="c1"># Escribimos el promedio de calificaciones en un nuevo archivo JSON</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'promedio_calificaciones.json'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">archivo_promedio</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">({</span><span class="s2">"promedio_calificaciones"</span><span class="p">:</span> <span class="n">promedio</span><span class="p">},</span> <span class="n">archivo_promedio</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"El promedio es: "</span><span class="p">,</span> <span class="n">promedio</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Puedes ver la solución a este problema en el link <a href="https://replit.com/@DomingoPerez/tema25prob5">https://replit.com/@DomingoPerez/tema25prob5</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema-6:-Interactuando-con-una-API-web">Problema 6: Interactuando con una API web<a class="anchor-link" href="#Problema-6:-Interactuando-con-una-API-web">¶</a></h2><p>Imagina que estás escribiendo un programa que necesita interactuar con una API web para obtener datos en tiempo real, como el precio actual de una criptomoneda.</p>
+<p>input() y print() no son suficientes aquí porque necesitamos enviar una solicitud HTTP a una API web y procesar la respuesta JSON que recibimos.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="c1"># Hacemos una solicitud GET a la API de CoinDesk para obtener el precio actual de Bitcoin</span>
+<span class="n">respuesta</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"https://api.coindesk.com/v1/bpi/currentprice/BTC.json"</span><span class="p">)</span>
+
+<span class="c1"># Convertimos la respuesta a JSON</span>
+<span class="n">datos</span> <span class="o">=</span> <span class="n">respuesta</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="c1"># Obtenemos el precio actual de Bitcoin en USD</span>
+<span class="n">precio_bitcoin</span> <span class="o">=</span> <span class="n">datos</span><span class="p">[</span><span class="s1">'bpi'</span><span class="p">][</span><span class="s1">'USD'</span><span class="p">][</span><span class="s1">'rate'</span><span class="p">]</span>
+
+<span class="c1"># Imprimimos el precio actual</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"El precio actual de Bitcoin es: </span><span class="si">{</span><span class="n">precio_bitcoin</span><span class="si">}</span><span class="s2"> USD"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Puedes ver la solución a este problema en el link <a href="https://replit.com/@DomingoPerez/tema25prob6">https://replit.com/@DomingoPerez/tema25prob6</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema-7:Lectura,-An%C3%A1lisis-y-Visualizaci%C3%B3n-de-Calificaciones">Problema 7:Lectura, Análisis y Visualización de Calificaciones<a class="anchor-link" href="#Problema-7:Lectura,-An%C3%A1lisis-y-Visualizaci%C3%B3n-de-Calificaciones">¶</a></h2><p>omo profesor, ahora tienes los datos de calificaciones de tus estudiantes en un archivo CSV y necesitas hacer un análisis más detallado. Tu tarea es leer el archivo, calcular el promedio de las calificaciones, y además, visualizar la distribución de las calificaciones a través de un gráfico. La visualización te permitirá tener una imagen más clara de cómo se distribuyen las calificaciones de los estudiantes.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Primero, necesitarás importar las bibliotecas pandas y matplotlib.pyplot:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Luego, lee el archivo CSV y calcula el promedio:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Leemos el archivo CSV</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'calificaciones.csv'</span><span class="p">)</span>
+
+<span class="c1"># Calculamos el promedio</span>
+<span class="n">promedio</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Calificacion'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="c1">#mean() calcula la media aritmetica</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"El promedio de las calificaciones es: </span><span class="si">{</span><span class="n">promedio</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Finalmente, utiliza matplotlib para crear un histograma de las calificaciones:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Definimos los bordes de los contenedores para que estén centrados en los números enteros</span>
+<span class="n">bins</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mf">0.5</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">12</span><span class="p">)]</span>  <span class="c1"># Los contenedores estarán centrados en números de 1 a 10</span>
+
+<span class="c1"># Creamos un histograma de las calificaciones</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Calificacion'</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="n">bins</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Distribución de las Calificaciones'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Calificaciones'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Cantidad de Estudiantes'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>  <span class="c1"># Para que los números enteros aparezcan en el eje x</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Este código creará un histograma que muestra la distribución de las calificaciones de los estudiantes, permitiéndote ver cuántos estudiantes obtuvieron cada calificación. Esto puede darte una idea más clara de cómo se distribuyen las calificaciones en general.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<p>Además de un histograma, hay varias otras visualizaciones que podrías considerar. Aquí hay algunas ideas:</p>
+<p><em>Gráfico de barras:</em> Podrías crear un gráfico de barras donde cada barra representa a un estudiante y la altura de la barra representa su calificación.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Nombre'</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">'Calificacion'</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">'skyblue'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Calificaciones de los Estudiantes'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Estudiantes'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Calificaciones'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>  <span class="c1"># Esto rotará los nombres de los estudiantes para una mejor lectura</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Puedes ver la solución a este problema en el link <a href="https://replit.com/@DomingoPerez/tema25prob7">https://replit.com/@DomingoPerez/tema25prob7</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Problema-8:-%C2%BFQu%C3%A9-pas%C3%B3-con-las-calificaciones-de-Carlos?">Problema 8: ¿Qué pasó con las calificaciones de Carlos?<a class="anchor-link" href="#Problema-8:-%C2%BFQu%C3%A9-pas%C3%B3-con-las-calificaciones-de-Carlos?">¶</a></h2><p>Te encuentras analizando las calificaciones de tus estudiantes y decides visualizar los datos en un gráfico de barras para tener una visión más clara. Sin embargo, te das cuenta de que algo no cuadra. Carlos, uno de tus estudiantes, aparece con una sola calificación de 8 en el gráfico, pero tú recuerdas claramente que él tiene dos calificaciones registradas, una de 8 y otra de 6.</p>
+<p>Te preguntas, ¿qué está pasando? ¿Cómo puedes asegurarte de que todas las calificaciones de Carlos (y de cualquier otro estudiante que pueda tener más de una calificación) sean tenidas en cuenta en tu gráfico?</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<p><em>Solución</em>El gráfico de barras que generaste originalmente toma cada calificación como una entrada individual. Si hay más de una entrada con el mismo nombre, sólo se considera una de ellas. Por tanto, necesitas una forma de agrupar todas las calificaciones de cada estudiante y luego graficar la calificación promedio de cada uno.</p>
+<p>Aquí es donde entra en juego la función groupby de Pandas. Esta función te permite agrupar tus datos según algún criterio. En este caso, quieres agrupar los datos por el nombre del estudiante. Luego puedes calcular el promedio de las calificaciones para cada estudiante y finalmente visualizar estos datos.</p>
+<p>Aquí está el código revisado que resuelve tu problema:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Agrupamos por nombre y calculamos el promedio de las calificaciones</span>
+<span class="n">df_agrupado</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Nombre'</span><span class="p">)[</span><span class="s1">'Calificacion'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Ordenamos el DataFrame por la columna 'Calificacion'</span>
+<span class="c1">#df_agrupado = df_agrupado.sort_values('Calificacion', ascending=False)</span>
+<span class="c1"># Descomenta lo anterior luego de probar la solución como se plantea</span>
+
+<span class="c1"># Creamos el gráfico de barras con los datos agrupados</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">df_agrupado</span><span class="p">[</span><span class="s1">'Nombre'</span><span class="p">],</span> <span class="n">df_agrupado</span><span class="p">[</span><span class="s1">'Calificacion'</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">'skyblue'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Promedio de Calificaciones por Estudiante'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Estudiantes'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Promedio de Calificaciones'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Mensaje-final">Mensaje final<a class="anchor-link" href="#Mensaje-final">¶</a></h1><p>¡Enhorabuena! Ahora tienes un mejor manejo de las técnicas de entrada y salida de datos en Python, desde el uso básico de input() y print(), hasta la lectura y escritura de archivos con el módulo csv y pandas. Hemos visto cómo pandas facilita el análisis de datos y la generación de gráficos de manera eficiente.</p>
+<p>Ten en cuenta que solo hemos arañado la superficie de lo que pandas puede hacer. Hay muchos otros métodos útiles disponibles. A continuación, te proporciono una tabla de referencia rápida de algunos de los métodos más importantes que podrías explorar a continuación.</p>
 <table>
 <thead>
 <tr>
-<th>Palabra reservadas</th>
+<th>Método</th>
+<th>Ejemplo</th>
+<th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>False</td>
+<td><code>read_excel()</code></td>
+<td><code>df = pd.read_excel('file.xlsx')</code></td>
+<td>Lee un archivo de Excel.</td>
 </tr>
 <tr>
-<td>True</td>
+<td><code>to_excel()</code></td>
+<td><code>df.to_excel('new_file.xlsx')</code></td>
+<td>Escribe un DataFrame a un archivo de Excel.</td>
 </tr>
 <tr>
-<td>def</td>
+<td><code>head()</code></td>
+<td><code>df.head()</code></td>
+<td>Muestra las primeras 5 filas del DataFrame.</td>
 </tr>
 <tr>
-<td>while</td>
+<td><code>tail()</code></td>
+<td><code>df.tail()</code></td>
+<td>Muestra las últimas 5 filas del DataFrame.</td>
 </tr>
 <tr>
-<td>if</td>
+<td><code>describe()</code></td>
+<td><code>df.describe()</code></td>
+<td>Genera estadísticas descriptivas.</td>
 </tr>
 <tr>
-<td>else</td>
+<td><code>drop()</code></td>
+<td><code>df.drop('column', axis=1)</code></td>
+<td>Elimina una columna o fila.</td>
+</tr>
+<tr>
+<td><code>merge()</code></td>
+<td><code>df = df1.merge(df2, on='key')</code></td>
+<td>Combina dos DataFrames basados en una clave común.</td>
+</tr>
+<tr>
+<td><code>concat()</code></td>
+<td><code>df = pd.concat([df1, df2])</code></td>
+<td>Combina dos DataFrames a lo largo de un eje.</td>
+</tr>
+<tr>
+<td><code>pivot_table()</code></td>
+<td><code>df.pivot_table(values='D', index=['A', 'B'], columns=['C'])</code></td>
+<td>Crea una tabla dinámica.</td>
+</tr>
+<tr>
+<td><code>isnull()</code></td>
+<td><code>df.isnull()</code></td>
+<td>Detecta valores perdidos.</td>
 </tr>
 </tbody>
 </table>
@@ -7644,651 +8404,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Para ver la lista completa utiliza el siguiente codigo en Python:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keyword</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">keyword</span><span class="o">.</span><span class="n">kwlist</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Las constantes son valores que no cambian durante la ejecución de un programa. En Python, se utilizan variables para almacenar constantes. Las constantes pueden ser números, cadenas de texto, booleanos o cualquier otro valor inmutable.</p>
-<p>Por ejemplo, los siguientes son constantes en Python:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">PI</span> <span class="o">=</span> <span class="mf">3.14159</span>
-<span class="n">NOMBRE_EMPRESA</span> <span class="o">=</span> <span class="s2">"Acme Corporation"</span>
-<span class="n">ES_POSITIVO</span> <span class="o">=</span> <span class="kc">True</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Las variables en Python son objetos que se utilizan para almacenar datos. Las variables se crean cuando se les asigna un valor y pueden cambiar durante la ejecución de un programa.</p>
-<p>Por ejemplo, el siguiente código crea una variable llamada edad y le asigna el valor 25:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">edad</span> <span class="o">=</span> <span class="mi">25</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>En Python, las variables no necesitan ser declaradas antes de usarlas. Python automáticamente asigna un tipo de datos a las variables basándose en el valor que se les asigna. Por ejemplo, si se asigna un número entero a una variable, Python automáticamente la considerará como una variable de tipo int. Si se asigna una cadena de texto a una variable, Python la considerará como una variable de tipo str.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Pero... ¿cómo podemos determinar el tipo de una variable? Si veo "un número" entero, puedo identificar que el tipo de variable es un int o si veo un texto escrito entre (" "), puedo determinar que es una variable str.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">edad</span> <span class="o">=</span> <span class="mi">12</span>
-<span class="n">nombre</span> <span class="o">=</span> <span class="s2">"Anthony"</span>
-<span class="n">altura</span> <span class="o">=</span> <span class="mf">1.75</span>
-
-<span class="nb">print</span> <span class="p">(</span><span class="s2">"la variable"</span><span class="p">,</span> <span class="n">edad</span><span class="p">,</span> <span class="s2">"es de tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">edad</span><span class="p">))</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">"la variable"</span><span class="p">,</span> <span class="n">nombre</span><span class="p">,</span> <span class="s2">"es de tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">nombre</span><span class="p">))</span>
-<span class="nb">print</span> <span class="p">(</span><span class="s2">"la variable"</span><span class="p">,</span> <span class="n">altura</span><span class="p">,</span> <span class="s2">"es de tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">altura</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Es importante tener en cuenta que las variables en Python son sensibles a mayúsculas y minúsculas. Esto significa que las variables edad y Edad son dos variables diferentes en Python.</p>
-<p>Además, las variables en Python pueden ser eliminadas utilizando la palabra clave del (Siempre y cuando esten definidas). Por ejemplo, el siguiente código elimina la variable edad y nombre:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">del</span> <span class="n">edad</span><span class="p">,</span> <span class="n">nombre</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">altura</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Cuidado! Que si intento eliminar la variable edad, sin crearla de nuevo, dará error, ya que la misma no existe. Este codigo resuelve este problema:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="s2">"edad"</span> <span class="ow">in</span> <span class="nb">globals</span><span class="p">():</span>
-    <span class="k">del</span> <span class="n">edad</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"puedo borrar edad"</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"no puedo borrar"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Nota 3: globals es un diccionario que cuenta con todas las variables globales que se utilizan en el programa actual.</em></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="id2"> </a></p>
-<h1 id="Tipos-de-datos-simples.-Enteros,-reales,-booleanos-y-caracteres.">Tipos de datos simples. Enteros, reales, booleanos y caracteres.<a class="anchor-link" href="#Tipos-de-datos-simples.-Enteros,-reales,-booleanos-y-caracteres.">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>En programación, los datos son la información que se manipula. Los lenguajes de programación trabajan con diferentes tipos de datos para poder manipular la información. En este artículo nos enfocaremos en los tipos de datos simples en Python, que son los más básicos y fundamentales para cualquier programa.</p>
-<p>Python es un lenguaje de programación orientado a objetos, lo que significa que cada valor en Python es un objeto. Un objeto es una estructura de datos que puede tener atributos (variables) y métodos (funciones). Los objetos en Python tienen un tipo que determina qué operaciones se pueden realizar con ellos.</p>
-<h2 id="Tipos-de-datos-simples">Tipos de datos simples<a class="anchor-link" href="#Tipos-de-datos-simples">¶</a></h2><p>Los tipos de datos simples en Python se dividen en cuatro categorías: enteros, reales, booleanos y caracteres. En Python también existe un tipo de dato complejo, que nos permite trabajar con números complejos.</p>
-<h3 id="Enteros-(int)">Enteros (int)<a class="anchor-link" href="#Enteros-(int)">¶</a></h3><p>Los enteros son números sin parte decimal. En Python, los enteros se representan con el tipo de datos int. Los enteros se pueden representar en notación decimal, binaria, octal y hexadecimal.</p>
-<p>Por ejemplo, para definir una variable entera y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero_entero</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Número entero:"</span><span class="p">,</span> <span class="n">numero_entero</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">numero_entero</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">3</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">res</span> <span class="o">=</span> <span class="mi">0</span>
-
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">+</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">-</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">*</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">/</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">c</span><span class="o">/</span><span class="n">a</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-<span class="n">res</span><span class="o">=</span><span class="n">a</span><span class="o">**</span><span class="n">b</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Reales-(float)">Reales (float)<a class="anchor-link" href="#Reales-(float)">¶</a></h3><p>Los números reales son aquellos que tienen una parte decimal. En Python, los números reales se representan con el tipo de datos float.</p>
-<p>Por ejemplo, para definir una variable real y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero_real</span> <span class="o">=</span> <span class="mf">3.1416</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Número real:"</span><span class="p">,</span> <span class="n">numero_real</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">numero_real</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Booleanos-(bool)">Booleanos (bool)<a class="anchor-link" href="#Booleanos-(bool)">¶</a></h3><p>Los booleanos son tipos de datos que solo pueden tomar dos valores: True (verdadero) o False (falso). En Python, los booleanos se representan con el tipo de datos bool.</p>
-<p>Por ejemplo, para definir una variable booleana y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">verdadero</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Booleano:"</span><span class="p">,</span> <span class="n">verdadero</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">verdadero</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Los valores booleanos tambien pueden ser utilizados</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">B</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">C</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="n">D</span> <span class="o">=</span> <span class="n">A</span> <span class="ow">and</span> <span class="n">B</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><em>Nota 5: Como operadores logicos solo existen 3, el and, or, y el not.
-Faltando: el condicional, bicondicional</em></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Caracteres-(str)">Caracteres (str)<a class="anchor-link" href="#Caracteres-(str)">¶</a></h3><p>Los caracteres son un tipo de dato que representa un solo carácter. En Python, los caracteres se representan con el tipo de datos str.</p>
-<p>Por ejemplo, para definir una variable de tipo carácter y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">caracter</span> <span class="o">=</span> <span class="s1">'a'</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Carácter:"</span><span class="p">,</span> <span class="n">caracter</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">caracter</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Complejos-(complex)">Complejos (complex)<a class="anchor-link" href="#Complejos-(complex)">¶</a></h3><p>Los números complejos son aquellos que tienen una parte real y una parte imaginaria. En Python, los números complejos se representan con el tipo de datos complex.</p>
-<p>Por ejemplo, para definir una variable compleja y mostrar su valor y tipo, podemos hacer lo siguiente:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero_complejo</span> <span class="o">=</span> <span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="n">j</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Número complejo:"</span><span class="p">,</span> <span class="n">numero_complejo</span><span class="p">,</span> <span class="s2">"Tipo:"</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">numero_complejo</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="id3"> </a></p>
-<h1 id="Operadores-logicos-y-de-comparacion">Operadores logicos y de comparacion<a class="anchor-link" href="#Operadores-logicos-y-de-comparacion">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Los operadores lógicos y de comparación son fundamentales en la programación, ya que permiten evaluar condiciones y realizar acciones basadas en el resultado de esas condiciones. En Python, tenemos operadores de comparación para comparar valores y operadores lógicos para combinar condiciones.</p>
-<h2 id="Operadores-de-comparacion">Operadores de comparacion<a class="anchor-link" href="#Operadores-de-comparacion">¶</a></h2><p>Los operadores de comparación son utilizados para comparar dos valores y devuelven un valor booleano, es decir, True o False. Los operadores de comparación en Python incluyen:</p>
-<ul>
-<li>Igual (==)</li>
-<li>Diferente (!=)</li>
-<li>Mayor que (&gt;)</li>
-<li>Menor que (&lt;)</li>
-<li>Mayor o igual que (&gt;=)</li>
-<li>Menor o igual que (&lt;=)</li>
-</ul>
-<p>Ejemplo de uso de operadores de comparación:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">7</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a == b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># Falso, porque 5 no es igual a 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a != b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># Verdadero, porque 5 es diferente de 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a &gt; b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Falso, porque 5 no es mayor que 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a &lt; b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Verdadero, porque 5 es menor que 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a &gt;= b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># Falso, porque 5 no es mayor o igual que 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a &lt;= b:"</span><span class="p">,</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">)</span> <span class="c1"># Verdadero, porque 5 es menor o igual que 7</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Operadores-logicos">Operadores logicos<a class="anchor-link" href="#Operadores-logicos">¶</a></h2><p>Los operadores lógicos son utilizados para combinar condiciones. Los operadores lógicos en Python incluyen:</p>
-<ul>
-<li>and: Devuelve True si ambas condiciones son verdaderas, de lo contrario devuelve False.</li>
-<li>or: Devuelve True si al menos una de las condiciones es verdadera, de lo contrario devuelve False.</li>
-<li>not: Devuelve True si la condición es falsa, y False si la condición es verdadera.</li>
-</ul>
-<p>Ejemplo de uso de operadores lógicos:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">z</span> <span class="o">=</span> <span class="mi">15</span>
-
-<span class="c1"># Comprobar si x es menor que y y si y es menor que z</span>
-<span class="n">condicion1</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">y</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">z</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Condición 1 (x &lt; y y y &lt; z):"</span><span class="p">,</span> <span class="n">condicion1</span><span class="p">)</span> <span class="c1"># Verdadero</span>
-
-<span class="c1"># Comprobar si x es igual a y o si y es igual a z</span>
-<span class="n">condicion2</span> <span class="o">=</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">==</span> <span class="n">z</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Condición 2 (x == y o y == z):"</span><span class="p">,</span> <span class="n">condicion2</span><span class="p">)</span> <span class="c1"># Falso</span>
-
-<span class="c1"># Negar la condición 1</span>
-<span class="n">condicion3</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">condicion1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Condición 3 (negación de la condición 1):"</span><span class="p">,</span> <span class="n">condicion3</span><span class="p">)</span> <span class="c1"># Falso</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>En este ejemplo, hemos utilizado operadores de comparación y operadores lógicos para construir condiciones más complejas y realizar acciones basadas en el resultado de esas condiciones.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="id4"> </a></p>
-<h1 id="Comparaciones-encadenadas">Comparaciones encadenadas<a class="anchor-link" href="#Comparaciones-encadenadas">¶</a></h1><p>Una característica interesante de Python es la posibilidad de realizar comparaciones encadenadas, lo que permite escribir condiciones más compactas y legibles. Veamos un ejemplo de cómo podemos utilizar comparaciones encadenadas y luego plantearemos un desafío para poner en práctica este concepto.</p>
-<p>En Python, se pueden encadenar comparaciones en una sola expresión. Por ejemplo, en lugar de escribir x &lt; y and y &lt; z, puedes escribir x &lt; y &lt; z. Esto es posible gracias a la evaluación de cortocircuito de Python, lo que significa que si la primera comparación devuelve False, el resto de las comparaciones no se evaluarán.</p>
-<p>Ejemplo de comparaciones encadenadas:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">15</span>
-
-<span class="c1"># Comprobar si a es menor que b y si b es menor que c</span>
-<span class="n">condicion_encadenada</span> <span class="o">=</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span> <span class="o">&lt;</span> <span class="n">c</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Comparación encadenada (a &lt; b &lt; c):"</span><span class="p">,</span> <span class="n">condicion_encadenada</span><span class="p">)</span> <span class="c1"># Verdadero</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="des1"> </a></p>
-<h1 id="Desaf%C3%ADo-1:-Clasificar-numeros">Desafío 1: Clasificar numeros<a class="anchor-link" href="#Desaf%C3%ADo-1:-Clasificar-numeros">¶</a></h1><p>Dado tres números distintos, clasificarlos en orden ascendente utilizando comparaciones encadenadas y operadores lógicos.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="des2"> </a></p>
-<h1 id="Desaf%C3%ADo-2:-Calcular-promedio">Desafío 2: Calcular promedio<a class="anchor-link" href="#Desaf%C3%ADo-2:-Calcular-promedio">¶</a></h1><p>Crear un programa que lea 5 calificaciones y calcule su promedio</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="des3"> </a></p>
-<h1 id="Desaf%C3%ADo-3:-Convertidor-de-temperaturas">Desafío 3: Convertidor de temperaturas<a class="anchor-link" href="#Desaf%C3%ADo-3:-Convertidor-de-temperaturas">¶</a></h1><p>Realizar conversiones de una temperatura dada en Celsius a Fahrenheit y Kelvin utilizando operaciones directas sobre las variables. Los cálculos se realizarán directamente al asignar los valores a las variables.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="des4"> </a></p>
-<h1 id="Desaf%C3%ADo-4:-Verificar-m%C3%BAltiplos-de-varios-n%C3%BAmeros">Desafío 4: Verificar múltiplos de varios números<a class="anchor-link" href="#Desaf%C3%ADo-4:-Verificar-m%C3%BAltiplos-de-varios-n%C3%BAmeros">¶</a></h1><p>Objetivo: Determinar si un número dado es múltiplo de 2, 3, 5, 7, 9, 10, y 11 utilizando comparaciones y operadores lógicos.</p>
-<p><em>Descripción:</em>
-Crea un programa que, dado un número, verifique si es múltiplo de los números mencionados. Para cada uno de estos números, el programa debe indicar si el número dado es o no un múltiplo de estos.</p>
-<p><em>Ejemplo de lo que se debe lograr:</em>
-Supongamos que el número dado es 30. El programa deberá determinar:</p>
-<p>¿Es 30 múltiplo de 2? Sí</p>
-<p>¿Es 30 múltiplo de 3? Sí</p>
-<p>¿Es 30 múltiplo de 5? Sí</p>
-<p>¿Es 30 múltiplo de 7? No</p>
-<p>¿Es 30 múltiplo de 9? No</p>
-<p>¿Es 30 múltiplo de 10? Sí</p>
-<p>¿Es 30 múltiplo de 11? No</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a id="ejemplos"></a></p>
-<h1 id="Ejemplos">Ejemplos<a class="anchor-link" href="#Ejemplos">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Aquí se señala la importancia de que los identificadores sean "sensibles a mayúsculas y minúsculas", siendo qué numero y Numero son dos variables diferentes.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">numero</span> <span class="o">=</span> <span class="mi">12</span> <span class="c1"># Se crea la variable "numero"</span>
-<span class="n">Numero</span> <span class="o">=</span> <span class="mi">86</span> <span class="c1"># Se crea la variable "Numero", siendo un identificador completamente diferente</span>
-
-<span class="nb">print</span> <span class="p">(</span><span class="s2">"La variable ´numero´, tiene un valor de:"</span><span class="p">,</span> <span class="n">numero</span><span class="p">,</span> <span class="s2">", mientras que la variable ´Numero´ tiene el valor de:"</span><span class="p">,</span> <span class="n">Numero</span><span class="p">,</span> <span class="s2">". Demostrando así que ambas son completamente diferentes para Python."</span><span class="p">)</span>
-</pre></div>
-</div>
+<p><em>Recuerda, la práctica hace al maestro. Continúa explorando, aprendiendo y aplicando lo que aprendes en tus propios proyectos. ¡Feliz codificación!</em></p>
 </div>
 </div>
 </div>
