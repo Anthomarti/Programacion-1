@@ -1,3 +1,13 @@
+"""
+# Titulo: Desafío 5
+# Autor: Anthony Martinelli
+# Fecha: 13/10/2024
+# Descripción:
+# Reflexiona sobre cómo podrías implementar una
+# función de búsqueda para encontrar un libro
+# específico o autor en una biblioteca.
+"""
+
 # Clase Autor
 class Autor:
     def __init__(self, nombre, nacionalidad, fecha_nacimiento, biografia):
