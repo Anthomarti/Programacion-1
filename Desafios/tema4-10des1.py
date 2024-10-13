@@ -20,7 +20,13 @@ multas = []
 def agregar_libro(titulo, autor, genero, stock, codigolibro):
 
     # Se crea el libro que cuenta con los atributos dados, en orden
-    libro = {"Título": titulo, "Autor": autor, "Género": genero, "Stock": stock, "CódigoL": codigolibro}
+    libro = {
+        "Título": titulo,
+        "Autor": autor,
+        "Género": genero,
+        "Stock": stock,
+        "CódigoL": codigolibro
+        }
    
     # Se agrega el libro a la lista libros
     libros.append(libro)
@@ -29,7 +35,11 @@ def agregar_libro(titulo, autor, genero, stock, codigolibro):
     print(f"Libro '{titulo}' agregado correctamente.")
 
 def agregar_usuario(nombre, codigousuario):
-    usuario = {"Nombre": nombre, "CódigoU": codigousuario}
+    usuario = {
+        "Nombre": nombre,
+        "CódigoU": codigousuario
+        }
+    
     usuarios.append(usuario)
     print(f"Usuario '{nombre}' agregado correctamente.")
 
@@ -51,7 +61,14 @@ def agregar_prestamo(codigolibro, codigousuario, fechaprestamo, fechadevolucion,
         print("Error: El libro no tiene stock disponible.")
         return
 
-    prestamo = {"CódigoP": codigoprestamo, "Libro": codigolibro, "Usuario": codigousuario, "Fecha préstamo": fechaprestamo, "Fecha devolución": fechadevolucion}
+    prestamo = {
+        "CódigoP": codigoprestamo,
+        "Libro": codigolibro,
+        "Usuario": codigousuario,
+        "Fecha préstamo": fechaprestamo,
+        "Fecha devolución": fechadevolucion
+        }
+    
     prestamos.append(prestamo)
     print(f"Préstamo de libro de título '{libro['Título']}', con código: '{libro['CódigoL']}' para el usuario de nombre '{usuario['Nombre']}, código: '{usuario['CódigoU']}' agregado correctamente.")
 
@@ -62,7 +79,12 @@ def agregar_multa(codigoprestamo, monto):
         print("Error: El código de préstamo no existe.")
         return
 
-    multa = {"CódigoP": codigoprestamo, "Monto": monto, "Usuario": prestamo["Usuario"]}
+    multa = {
+        "CódigoP": codigoprestamo,
+        "Monto": monto,
+        "Usuario": prestamo["Usuario"]
+        }
+    
     multas.append(multa)
     print(f"Multa de monto {monto} pesos, agregada correctamente al usuario con código: '{prestamo['Usuario']}'.")
 
@@ -173,7 +195,7 @@ for multa in multas:
     print(f"** Usuario:** {multa['Usuario']}")
     print("------------------------")
 
-print("\n** Borrando libro, usuario, préstamo y multa... **")
+print("\n** Borrando libro, préstamo, usuario y multa... **")
 borrar_libro(1)
 borrar_prestamo(1)
 borrar_usuario(1)
