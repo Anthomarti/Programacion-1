@@ -1,6 +1,10 @@
 """
 Autor: Anthony Martinelli
-Letra: Toma el ejemplo del cálculo del promedio de calificaciones y mejóralo. En lugar de pedir las calificaciones una por una, modifica el código para pedir todas las calificaciones al mismo tiempo (el estudiante puede ingresar las calificaciones separadas por comas) y luego calcular el promedio.
+Letra: Toma el ejemplo del cálculo del promedio de calificaciones
+y mejóralo. En lugar de pedir las calificaciones una por una,
+modifica el código para pedir todas las calificaciones al mismo
+tiempo (el estudiante puede ingresar las calificaciones separadas
+por comas) y luego calcular el promedio.
 """
 
 suma_calificaciones = 0
