@@ -1,5 +1,5 @@
 """
-# Titulo: Desafío 2
+# Titulo: Desafío 2 Encapsulamiento
 # Autor: Anthony Martinelli
 # Fecha: 13/10/2024
 # Descripción:
