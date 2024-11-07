@@ -1,0 +1,11 @@
+Nombre del libro: Quijote
+Nombre del prestatario: Juan
+Fecha del prestamo: 07/11/2024
+
+Nombre del libro: librogratis
+Nombre del prestatario: persona
+Fecha del prestamo: 07/11/2024
+
+Nombre del libro: otrolibro
+Nombre del prestatario: otrapersona
+Fecha del prestamo: 11/07/2024
